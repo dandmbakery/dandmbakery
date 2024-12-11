@@ -415,3 +415,17 @@ h6,
 .copyright a:hover {
     color: var(--light);
 }
+
+.arrow-image {
+    transition: filter 0.3s ease, transform 0.3s ease;
+    /* Smooth transition for filter and scale */
+    filter: brightness(0.5);
+    /* Initial dull effect */
+}
+
+.arrow-image:hover {
+    filter: brightness(1.0);
+    /* Bright effect on hover */
+    transform: scale(1.0);
+    /* Slight zoom-in for emphasis (optional) */
+}
