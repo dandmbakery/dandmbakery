@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order</title>
+
+    <link rel="stylesheet" href="css/order.css">
+    <script src="js/success.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Enter Order Details
+        </div>
+        <form id="order">
+            <div class="field">
+                <input type="text" required>
+                <label>Full Name</label>
+            </div>
+
+            <div class="field">
+                <input type="text" required>
+                <label>Address</label>
+            </div>
+
+            <div class="field">
+                <input type="text" required>
+                <label>Email</label>
+            </div>
+
+            <div class="field">
+                <input type="text" required>
+                <label>Phone No.</label>
+            </div>
+
+            <div class="payment">
+                <input type="text" value="Cash On Delivery (COD)" readonly>
+                <label>Payment Option</label>
+            </div>
+
+            <div class="field">
+                <input type="submit" value="Place Order">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("order").addEventListener("submit", function (event) {
+            event.preventDefault();
+            swal("Order Placed Successfully!", "", "success");
+        });
+    </script>
+</body>
+
+</html>
